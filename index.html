@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swetha — Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <!-- Editor chrome: window dots + tab bar doubles as nav -->
+  <div class="editor">
+    <div class="titlebar">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <span class="titlebar-path">swetha-portfolio — code</span>
+    </div>
+    <nav class="tabbar">
+      <a href="#home" class="tab active" data-tab="home.js">home.js</a>
+      <a href="#about" class="tab" data-tab="about.js">about.js</a>
+      <a href="#skills" class="tab" data-tab="skills.js">skills.js</a>
+      <a href="#projects" class="tab" data-tab="projects.js">projects.js</a>
+      <a href="#contact" class="tab" data-tab="contact.js">contact.js</a>
+      <div class="tab-spacer"></div>
+      <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="line-numbers" aria-hidden="true">
+        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span>
+      </div>
+      <div class="code-block">
+        <p><span class="kw">const</span> <span class="var">developer</span> = {</p>
+        <p class="indent"><span class="prop">name</span>: <span class="str">"Swetha"</span>,</p>
+        <p class="indent"><span class="prop">role</span>: <span class="str">"Web Developer"</span>,</p>
+        <p class="indent"><span class="prop">based_in</span>: <span class="str">"Dindigul, India"</span>,</p>
+        <p class="indent"><span class="prop">status</span>: <span class="str">"Open for freelance work"</span>,</p>
+        <p class="indent"><span class="prop">stack</span>: [<span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JavaScript"</span>, <span class="str">"Node.js"</span>]</p>
+        <p>}<span class="cursor">&nbsp;</span></p>
+      </div>
+      <h1 class="hero-headline">I build clean, functional websites<br>from front end to backend.</h1>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects <span class="arrow">→</span></a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <span class="eyebrow">// about.js</span>
+        <h2>Who I am</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-text">
+          I'm a Computer Science student at <strong>PSNA College of Engineering and Technology</strong>,
+          currently deep in data structures and algorithms by day — and building full websites by night.
+          I like the whole stack: laying out a page in HTML and CSS, making it feel alive with JavaScript,
+          then wiring up a real backend so it actually <em>does</em> something.
+        </p>
+        <p class="about-text">
+          I'm just starting to take on freelance work, which means you get a developer who's hungry to prove
+          herself, communicates clearly, and treats your project like a real product — not a class assignment.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <span class="eyebrow">// skills.js</span>
+        <h2>What I work with</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-tag">import</span>
+          <h3>HTML &amp; CSS</h3>
+          <p>Responsive, semantic layouts that hold up on any screen size.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-tag">import</span>
+          <h3>JavaScript</h3>
+          <p>Interactive UI — forms, navigation, dynamic content, DOM logic.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-tag">import</span>
+          <h3>Node.js &amp; Express</h3>
+          <p>REST APIs that connect your frontend to real data.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-tag">import</span>
+          <h3>SQLite / SQL</h3>
+          <p>Simple, reliable databases for storing and querying real data.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-tag">import</span>
+          <h3>Git &amp; GitHub</h3>
+          <p>Version control, clean commit history, collaborative workflows.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-tag">import</span>
+          <h3>Problem Solving</h3>
+          <p>Grounded in DSA fundamentals — I write code that's built to last.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <span class="eyebrow">// projects.js</span>
+        <h2>Recent work</h2>
+      </div>
+      <div class="projects-list">
+        <article class="project-card">
+          <div class="project-info">
+            <span class="project-status">Full-stack build</span>
+            <h3>Fork &amp; Fire</h3>
+            <p>
+              A restaurant website built end-to-end: a responsive frontend with a live menu, gallery,
+              and testimonials, backed by a Node.js/Express API and SQLite database that handles
+              contact messages, food orders, and table bookings.
+            </p>
+            <ul class="project-tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Node.js</li><li>Express</li><li>SQLite</li>
+            </ul>
+          </div>
+          <div class="project-visual">
+            <div class="mock-browser">
+              <div class="mock-browser-bar">
+                <span></span><span></span><span></span>
+                <span class="mock-browser-url">forkandfire.live</span>
+              </div>
+              <div class="mock-browser-viewport">
+                <iframe
+                  class="site-preview-frame"
+                  src="https://swetha1120068.github.io/Fork-Fire-Restaurant/"
+                  title="Fork & Fire live preview"
+                  loading="lazy"
+                  tabindex="-1"
+                  aria-hidden="true"
+                ></iframe>
+              </div>
+            </div>
+            <a class="text-link project-visual-link" href="https://swetha1120068.github.io/Fork-Fire-Restaurant/" target="_blank" rel="noopener">Visit live site →</a>
+          </div>
+        </article>
+
+        <article class="project-card project-card-next">
+          <div class="project-info">
+            <span class="project-status">Coming soon</span>
+            <h3>Your project here</h3>
+            <p>
+              I'm currently taking on new freelance projects — restaurant sites, portfolios,
+              small business pages, or full-stack apps. If you have something in mind, let's talk.
+            </p>
+            <a href="#contact" class="text-link">Start a project →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="section-head">
+        <span class="eyebrow">// contact.js</span>
+        <h2>Let's build something</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="terminal-prompt"><span class="prompt-sign">$</span> contact --send --to="swetha"</p>
+          <p class="about-text">
+            Tell me a bit about your project — what it is, what you need, and any timeline you have in mind.
+            I'll get back to you within a day or two.
+          </p>
+          <ul class="contact-links">
+            <li><span class="contact-label">Email</span><a href="mailto:swetha1120068@gmail.com">swetha1120068@gmail.com</a></li>
+            <li><span class="contact-label">GitHub</span><a href="https://github.com/swetha1120068" target="_blank" rel="noopener">github.com/swetha1120068</a></li>
+            <li><span class="contact-label">LinkedIn</span><a href="https://linkedin.com/in/swetharcs" target="_blank" rel="noopener">linkedin.com/in/swetharcs</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" id="portfolio-contact-form" action="https://formspree.io/f/mrpzawpg" method="POST">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            Project details
+            <textarea name="message" placeholder="What are you looking to build?" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send message <span class="arrow">→</span></button>
+          <p class="form-note" id="form-note"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Swetha. Built from scratch, line by line.</p>
+  </footer>
+
+  <script src="script1.js"></script>
+</body>
+</html>
